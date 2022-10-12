@@ -1,0 +1,11 @@
+Task 6
+var item2 = document.querySelector('.list-group-item:nth-child(2)')
+var item3 = document.querySelector('.list-group-item:nth-child(3)')
+item2.style.backgroundColor = 'green'
+item3.style.fontWeight = '0'
+item3.style.color = 'white'
+
+var odd = document.querySelectorAll('li:nth-child(odd)');
+
+for (var i = 0; i < odd.length; i++) {
+    odd[i].style.backgroundColor = 'green';
