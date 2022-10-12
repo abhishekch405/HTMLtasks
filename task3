@@ -1,0 +1,6 @@
+//Task3
+//If there isn't a id given give it one.
+ var x = document.getElementById('additems');
+ x.style.background = 'green';
+ x.innerHTML = '<b>Add Items</b>';
+console.dir(x.style)
