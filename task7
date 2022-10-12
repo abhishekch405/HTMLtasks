@@ -1,0 +1,87 @@
+var itemList = document.querySelector('#items')
+//parentNode property
+// console.log(itemList.parentNode);
+// itemList.parentNode.style.backgroundColor = '#f4f4f4';
+// console.log(itemList.parentNode.parentNode.parentNode);
+
+//parentElement
+// console.log(itemList.parentElement);
+// itemList.parentElement.style.backgroundColor = '#f4f4f4';
+// console.log(itemList.parentElement.parentElement.parentElement);
+
+
+//childNodes
+//console.log(itemList.childNodes);
+
+//children
+// console.log(itemList.children);
+// console.log(itemList.children[1]);
+// itemList.children[1].style.backgroundColor = 'yellow';
+
+// //FirstChild
+// console.log(itemList.firstChild);
+
+// console.log(itemList.firstElementChild)
+// itemList.firstElementChild.textContent = 'Hellow World'
+//last child
+//console.log(itemList.lastChild);
+//lastelementchild
+
+//console.log(itemList.lastElementChild);
+
+//nextsibling
+// console.log(itemList.nextSibling)
+// //next eleemt sibling
+// console.log(itemList.nextElementSibling)
+
+
+//previoussibling
+// console.log(itemList.previousSibling);
+// console.log(itemList.previousElementSibling);
+// itemList.previousElementSibling.style.color = 'green';
+
+//create element
+
+//create a div
+var newDiv = document.createElement('div');
+//Add class
+newDiv.className = 'Hello';
+//add id
+newDiv.id = 'Hello1'
+//set attribute
+newDiv.setAttribute('title', 'Hellow Div');
+
+//create text node
+
+var newDivText = document.createTextNode('Hello WORDL Text Node');
+//add text to div
+newDiv.appendChild(newDivText)
+
+var container = document.querySelector('header .container');
+var h1 = document.querySelector('header h1')
+container.insertBefore(newDiv, h1);
+//console.log(newDiv)
+
+
+
+
+
+
+
+
+
+
+
+
+
+var newul = document.createElement('ul');
+newul.className = 'list-group-item';
+newul.setAttribute('title', 'Hello World');
+var newulText = document.createTextNode('Hello WORLD');
+//add text to div
+newul.appendChild(newulText)
+var listgroup = document.querySelector('ul');
+var l1 = document.querySelector('ul .list-group-item')
+//console.log(listgroup)
+//console.log(l1)
+listgroup.insertBefore(newul, l1)
