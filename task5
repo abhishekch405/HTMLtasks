@@ -1,0 +1,5 @@
+//first add a new li with different class
+//Task5
+var li = document.getElementsByClassName("title")
+li[2].style.fontWeight = 'bold';
+//console.log(li);
